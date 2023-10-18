@@ -2,6 +2,7 @@
 
 :root{
     --header-height: 3rem;
+    /* colores */
     --title-color: #0B0A0A;
     --text-color: #403A3A;
     --text-color-light: #707070;
@@ -9,6 +10,7 @@
     --container-color-alt: #F0EFEF;
     --body-color: #fcfcfc;
 
+    /* fuentes y tamaños */
     --body-font-family: 'Poppins', sans-serif;
     --h1-font-size: 1.5rem;
     --h2-font-size: 1.25rem;
@@ -33,7 +35,37 @@
 html{
     scroll-behavior: smooth;
 }
+/* Variables para el tema oscuro */
+body.dark-theme{
+    --title-color: #f2f2f2;
+    --text-color: #BFBFBF;
+    --container-color: #212121;
+    --container-color-alt: #181616;
+    --body-color: #2B2B2B;
+}
+/* Boton dark/light */
+.change-theme{
+    position: absolute;
+    right: 0;
+    top: 2.2rem;
+    display: flex;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.change-theme:hover{
+    color: var(--title-color);
+}
 
+/* boton para generar PDF */
+.generate-pdf{
+    /* display: none; */
+    position: absolute;
+    top: 2.2rem;
+    left: 0;
+    font-size: 1.2rem;
+    cursor: pointer
+}
 body{
     margin: 0 0 var(--header-height) 0;
     padding: 0;
@@ -279,19 +311,22 @@ img{
     font-size: var(--smaller-font-size);
 }
 
-/* Skill */
-.skills__content{
+/* Skill y Lenguajes */
+.skills__content,
+.languages__content{
     grid-template-columns: repeat(2, 1fr);
 }
-.skills__content{
+.languages__content{
     gap: 0;
 }
-.skills__name{
+.skills__name,
+.languages__name{
     display: flex;
     align-items: center;
     margin-bottom: var(--mb-3);
 }
-.skills__circle{
+.skills__circle,
+.languages__circle{
     display: inline-block;
     width: 5px;
     height: 5px;
@@ -299,4 +334,123 @@ img{
     border-radius: 50%;
     margin-right: 10px;
 }
+/* Certificate */
+.certificate__title{
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-1);
+}
 
+/* Referencia */
+.references__content{
+    gap: .25rem;
+}
+.references__subtitle{
+    color: var(--text-color-light);
+}
+.references__subtitle,
+.references__contact{
+    font-size: var(--smaller-font-size);
+}
+.references__title{
+    font-size: var(--h3-font-size);
+}
+
+/* intereses */
+.interests__container{
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: var(--mb-2);
+}
+.interests__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.interests__icon{
+    font-size: 1.5rem;
+    color: var(--text-color-light);
+    margin-bottom: .25rem;
+}
+
+/* scroll-top */
+.scrolltop{
+    position: fixed;
+    right: 1rem;
+    bottom: -20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--container-color-alt);
+    border-radius: .4rem;
+    padding: .3rem;
+    z-index: var(--z-tooltip);
+    transition: .4s;
+    visibility: hidden;
+}
+.scrolltop__icon{
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+.show-scroll{
+    visibility: visible;
+    bottom: 5rem;
+}
+.download__icon{
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin-right: .25rem;
+}
+@media screen and (max-width: 320px) {
+    .nav__list{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem .5rem;
+    }
+}
+@media screen and (min-width: 968px){
+    body{
+        margin: 3rem 0;
+    }
+    .bd-container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .l-header,
+    .scrolltop{
+        display: none;
+    }
+
+    .resume{
+        display: grid;
+        grid-template-columns: .5fr 1fr;
+        background-color: var(--container-color);
+        box-shadow: 0 0 8px rgba(13, 12, 12, .15);
+    }
+
+    .resume__left{
+        background-color: var(--container-color-alt);
+    }
+    .resume__left,
+    .resume__right{
+        padding: 0 1.5rem;
+    }
+    .section-title,
+    .profile__description{
+        text-align: initial;
+    }
+    .home__container{
+        gap: 1.5rem;
+    }
+    /* .home__button-movil{
+        display: none;
+    } */
+    .references__container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .languages__content{
+        grid-template-columns: repeat(3, max-content);
+        column-gap: 3.5rem;
+    }
+    .interests__container{
+        grid-template-columns: repeat(4, max-content);
+        column-gap: 3.5rem;
+    }
+}
