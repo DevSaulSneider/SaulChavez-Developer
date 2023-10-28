@@ -6,7 +6,7 @@
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
   <title>Profesor Computacion - Saul Chavez</title>
   <link rel='shortcut icon' href='public/img/icon.png' type='image/x-icon'>
-  <link rel='stylesheet' href='assets/css/normalize.css'>
+  <!-- <link rel='stylesheet' href='assets/css/normalize.css'> -->
   <!-- boxicons -->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <!-- mis estilos -->
@@ -16,16 +16,16 @@
 <body>
   <header class='l-header' id='header'>
     <nav class='nav bd-container'>
-      <a href='#' class='nav__log'>Saul Chavez</a>
+      <a href='#' class='nav__logo'>Saul Chavez</a>
       <div class='nav__menu' id='nav-menu'>
         <ul class='nav__list'>
           <li class='nav__item'>
-            <a href='#inicio' class='nav__link active-link'>
+            <a href='#' class='nav__link active-link'>
               <i class='bx bx-home nav__icon'></i> Inicio
             </a>
           </li>
           <li class='nav__item'>
-            <a href='#profile' class='nav__link'>
+            <a href='#perfil' class='nav__link'>
               <i class='bx bx-user nav__icon'></i> Perfil
             </a>
           </li>
@@ -71,10 +71,12 @@
             <div class='home__data bd-grid'>
               <img src='public/img/perfil.jpg' alt='Profesor Computacion Saul Chavez' class='home__img'>
               <h1 class='home__title'>Saul <b>Chavez</b></h1>
-              <h3 class='home__profession'>Web Developer</h3>
+              <h3 class='home__profession'>Docente Computacion</h3>
+              <h3 class='home__profession dweb'>Web Developer</h3>
 
               <div>
-                <a download='SaulChavez-ProfesorComputacion.pdf' href='public/pdf/cv.pdf' class='home__button-movil'> Download CV</a>
+                <a download='SaulChavez-ProfesorComputacion.pdf' href='public/pdf/cv.pdf' class='home__button-movil'>
+                  Descargar CV</a>
               </div>
             </div>
 
@@ -83,10 +85,16 @@
                 <i class='bx bx-map home__icon'></i> Puente Piedra | Lima - Peru
               </span>
               <span class='home__information'>
-                <i class='bx bx-envelope home__icon'></i> saulsneiderwork@outlook.com
+                <a class='home__information social__link' href="mailto:saulsneiderwork@outlook.com">
+                  <i class='bx bx-envelope home__icon'></i>
+                  saulsneiderwork@outlook.com
+                </a>
               </span>
               <span class='home__information'>
-                <i class='bx bx-phone home__icon'></i> +51 925 640 292
+                <a class='home__information social__link' href="tel:925640292">
+                  <i class='bx bx-phone home__icon'></i>
+                  +51 925 640 292
+                </a>
               </span>
             </div>
           </div>
@@ -99,70 +107,77 @@
         <section class="social section">
           <h2 class="section-title">SOCIAL</h2>
           <div class="social__container bd-grid">
-            <a href="#" target="_blank" class="social__link">
-              <i class='bx bxl-linkedin social__icon'></i> @SaulSneider
+            <a href="https://www.linkedin.com/in/saul-sneider-chavez-2a7049245/" target="_blank" class="social__link">
+              <i class='bx bxl-linkedin social__icon'></i> @SaulSneiderChavez
             </a>
-            <a href="#" target="_blank" class="social__link">
+            <a href="https://www.facebook.com/saulsneider.chavezchico.7/" target="_blank" class="social__link">
               <i class='bx bxl-facebook social__icon'></i> @SaulSneider
             </a>
-            <a href="#" target="_blank" class="social__link">
-              <i class='bx bxl-whatsapp social__icon'></i> @SaulSneider
+            <a href="https://api.whatsapp.com/send?phone=925640292&text=Hola%20vengo%20desde%20tu%20CV%20virtual%20"
+              target="_blank" class="social__link">
+              <i class='bx bxl-whatsapp social__icon'></i> @DevSaulSneider
+            </a>
+            <a href="https://www.instagram.com/saulsneider/" target="_blank" class="social__link">
+              <i class='bx bxl-instagram social__icon'></i> @SaulSneider
             </a>
           </div>
         </section>
-        <!-- Profile -->
-        <section class="profile section" id="profile">
-          <h2 class="section-title">Profile</h2>
-          <p class="profile__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod inventore
-            dolores vero soluta ut nisi molestiae omnis tempora sint beatae adipisci, eius facere dolor ea unde alias
-            reprehenderit neque animi!</p>
+        <!-- perfil -->
+        <section class="perfil section" id="perfil">
+          <h2 class="section-title">perfil</h2>
+          <p class="perfil__description">Soy tecnico titulado de SENATI de la carrera Desarrollo de Software, me encanta
+            y apasionado todo
+            relacionado a la tecnología, tengo muchas ganas de poder seguir aprendiendo, trabajar en equipo
+            y aportar todos mis conocimientos superar las espectativas. Durante el tiempo de mi formacion
+            profesional he tenido la oportunidad de dictar clases de computacion, informatica y todo respecto a las
+            tecnologias</p>
         </section>
-        <!-- education -->
-        <section class="education section" id="educacion">
-          <h2 class="section-title">Education</h2>
-          <div class="education__container bd-grid">
+        <!-- educacion -->
+        <section class="educacion section" id="educacion">
+          <h2 class="section-title">educacion</h2>
+          <div class="educacion__container bd-grid">
 
-            <div class="education__content">
-              <div class="education__time">
-                <span class="education__rounder"></span>
-                <span class="education__line"></span>
+            <div class="educacion__content">
+              <div class="educacion__time">
+                <span class="educacion__rounder"></span>
+                <span class="educacion__line"></span>
               </div>
 
-              <div class="education__data bd-grid">
-                <h3 class="education__title">Primaria</h3>
-                <span class="education__studies">Institute Studies</span>
-                <span class="education__year">2020 - 2022</span>
-              </div>
-            </div>
-
-            <div class="education__content">
-              <div class="education__time">
-                <span class="education__rounder"></span>
-                <span class="education__line"></span>
-              </div>
-
-              <div class="education__data bd-grid">
-                <h3 class="education__title">Secundaria</h3>
-                <span class="education__studies">University od Studies</span>
-                <span class="education__year">2020 - 2022</span>
+              <div class="educacion__data bd-grid">
+                <h3 class="educacion__title">Primaria</h3>
+                <span class="educacion__studies">Rosa Merino - Rimac</span>
+                <span class="educacion__year">2005 - 2010</span>
               </div>
             </div>
 
-            <div class="education__content">
-              <div class="education__time">
-                <span class="education__rounder"></span>
-                <!-- <span class="education__line"></span> -->
+            <div class="educacion__content">
+              <div class="educacion__time">
+                <span class="educacion__rounder"></span>
+                <span class="educacion__line"></span>
               </div>
 
-              <div class="education__data bd-grid">
-                <h3 class="education__title">Web Developer</h3>
-                <span class="education__studies">University od Studies</span>
-                <span class="education__year">2020 - 2022</span>
+              <div class="educacion__data bd-grid">
+                <h3 class="educacion__title">Secundaria</h3>
+                <span class="educacion__studies">Augusto B. Leguia</span>
+                <span class="educacion__year">2011 - 2015</span>
+              </div>
+            </div>
+
+            <div class="educacion__content">
+              <div class="educacion__time">
+                <span class="educacion__rounder"></span>
+                <!-- <span class="educacion__line"></span> -->
+              </div>
+
+              <div class="educacion__data bd-grid">
+                <h3 class="educacion__title">Profesional Tecnico</h3>
+                <span class="educacion__studies">SENATI</span>
+                <span class="educacion__year">2020 - 2022</span>
               </div>
             </div>
 
             <!-- Skills -->
-            <section class="skills section" id="skills">
+            <section class="skills section" id="skill">
               <h2 class="section-title">Skills</h2>
               <div class="skills__content bd-grid">
 
@@ -183,10 +198,10 @@
 
                 <ul class="skills__data">
                   <li class="skills__name">
-                    <span class="skills__circle"></span> Angular
+                    <span class="skills__circle"></span> Ofim&aacute;tica
                   </li>
                   <li class="skills__name">
-                    <span class="skills__circle"></span> React
+                    <span class="skills__circle"></span> Proactivo
                   </li>
                   <li class="skills__name">
                     <span class="skills__circle"></span> Firebase
@@ -200,50 +215,75 @@
       </div>
       <div class='resume__right'>
         <!-- Experiencia -->
-        <section class="experience section" id="exp">
-          <h2 class="section-title">Experience</h2>
+        <section class="experiencia section" id="exp">
+          <h2 class="section-title">experiencia</h2>
 
-          <div class="experience__container bd-grid">
-            <div class="experience__content">
-              <div class="experience__time">
-                <span class="experience__rounder"></span>
-                <span class="experience__line"></span>
+          <div class="experiencia__container bd-grid">
+            <div class="experiencia__content">
+              <div class="experiencia__time">
+                <span class="experiencia__rounder"></span>
+                <span class="experiencia__line"></span>
               </div>
 
-              <div class="experience__data bd-grid">
-                <h3 class="experience__title">Web Developer</h3>
-                <span class="experience__company">From 2013 to 2015 | Tech Soft</span>
-                <p class="experience__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam enim
-                  cumque pariatur? Doloribus dolores, sunt aperiam ex enim nihil commodi alias ducimus quia assumenda
-                  quo quibusdam cumque dicta iste. Minima?</p>
+              <div class="experiencia__data bd-grid">
+                <h3 class="experiencia__title">Docente de Computacion / Desarrollo Web</h3>
+                <span class="experiencia__company">Octubre 2022 - Actualidad | CRACK THE CODE</span>
+                <p class="experiencia__description"><b>Experiencia en Proyectos Relevantes</b></p>
+                <ul>
+                  <li> <b>Proyecto con UNICEF</b></li>
+                    <ul>
+                      <li>Colaboraci&oacute;n en un proyecto con UNIFEC PER&Uacute;, donde estuve a cargo de dictar el curso de Desarrollo Web utilizando Html, Css y JavaScript</li><br>
+                    </ul>
+                  <li> <b>Proyecto con Mercado Libre</b></li>
+                    <ul>
+                      <li>Participaci&oacute;n en un proyecto con Mercado Libre, enfocado en la enseñanza de programacion con Python a adolescentes. </li><br>
+                    </ul>
+                  <li> <b>Proyecto cpm la Alcad&iacute;a de Ch&iacute;a (Colombia)</b></li>
+                    <ul>
+                      <li>Participaci&oacute;n en un proyecto con la Alcald&iacute;a de Ch&iacute;a, Colombia, donde se dicto clase a j&oacute;venes de creaci&oacute;n de sitios web ulilizando diversas tecnolog&iacute;as. </li><br>
+                    </ul>
+                  <li> <b>Proyecto con el Colegio Innova Schooll</b></li>
+                    <ul>
+                      Colaboraci&oacute;n en un proyecto con el colegio Innova Schooll, donde se brindaron clases para insentivar a los niños a poder presentar interes por la tecnolog&iacute;a y programaci&oacute;n.
+                    </ul>
+                </ul><br>
+                <p> <b>Cursos Dictados:</b></p>
+                <ul class="ul_default">
+                  <li>Python</li>
+                  <li>Minecraft Education</li>
+                  <li>Desarrollo Web (Html, Css, Js)</li>
+                  <li>Uso Correcto de Inteligencia Artificial</li>
+                  <li>Wordpress</li>
+                  <li>Wix</li>
+                  <li>Bootstrap</li>
+                  <li>Roblox Studio</li>
+                </ul>
               </div>
             </div>
 
-            <div class="experience__content">
-              <div class="experience__time">
-                <span class="experience__rounder"></span>
-                <span class="experience__line"></span>
+            <div class="experiencia__content">
+              <div class="experiencia__time">
+                <span class="experiencia__rounder"></span>
+                <span class="experiencia__line"></span>
               </div>
 
-              <div class="experience__data bd-grid">
-                <h3 class="experience__title">FrontEnd Developer</h3>
-                <span class="experience__company">From 2013 to 2015 | Tech Soft</span>
-                <p class="experience__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam enim
-                  cumque pariatur? Doloribus dolores, sunt aperiam ex enim nihil commodi alias ducimus quia assumenda
-                  quo quibusdam cumque dicta iste. Minima?</p>
+              <div class="experiencia__data bd-grid">
+                <h3 class="experiencia__title">Programador Web</h3>
+                <span class="experiencia__company">Septiembre 2022 a Diciembre 2022 | NEON HOUSE LED</span>
+                <p class="experiencia__description">Durante mi empleo, fui responsable de desarrollar sitios web utilizando HTML, CSS, JavaScript, Bootstrap y jQuery. Mi enfoque estaba en la creación de páginas web de alta calidad según las especificaciones del proyecto, cumpliendo con estándares de diseño y plazos. Esta experiencia fortaleció mis habilidades en diseño web y programación, además de mi capacidad para trabajar en equipo.</p>
               </div>
             </div>
 
-            <div class="experience__content">
-              <div class="experience__time">
-                <span class="experience__rounder"></span>
-                <!-- <span class="experience__line"></span> -->
+            <div class="experiencia__content">
+              <div class="experiencia__time">
+                <span class="experiencia__rounder"></span>
+                <!-- <span class="experiencia__line"></span> -->
               </div>
 
-              <div class="experience__data bd-grid">
-                <h3 class="experience__title">BackEnd Developer</h3>
-                <span class="experience__company">From 2013 to 2015 | Tech Soft</span>
-                <p class="experience__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam enim
+              <div class="experiencia__data bd-grid">
+                <h3 class="experiencia__title">BackEnd Developer</h3>
+                <span class="experiencia__company">From 2013 to 2015 | Tech Soft</span>
+                <p class="experiencia__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam enim
                   cumque pariatur? Doloribus dolores, sunt aperiam ex enim nihil commodi alias ducimus quia assumenda
                   quo quibusdam cumque dicta iste. Minima?</p>
               </div>
@@ -251,54 +291,97 @@
           </div>
         </section>
         <!-- certificaciones -->
-        <section class="certificate section" id="certificaciones">
-          <h2 class="section-title">Certificate</h2>
+        <section class="certificados section" id="certificaciones">
+          <h2 class="section-title">certificados / Constancias</h2>
 
-          <div class="certificate__container bd-grid">
+          <div class="certificados__container bd-grid">
 
-            <div class="certificate__content">
-              <h3 class="certificate__title">Certificate for compliance in the work area (2012)</h3>
-              <p class="certificate__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+            <div class="certificados__content">
+              <h3 class="certificados__title">CISCO | Entrepreneurship</h3>
+              <p class="certificados__description"><a class="experiencia__company" href="public/pdf/certificados/Entrepreneurship_SaulChavez.pdf" target="_blank" rel="noopener noreferrer">Ver certificado</a></p>
+              <!-- <p class="certificados__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
                 eveniet rem eligendi quos vitae accusamus enim ea iste natus, dignissimos quasi accusantium dolore?
-                Libero quis quos amet, a minus obcaecati.</p>
+                Libero quis quos amet, a minus obcaecati.</p> -->
             </div>
 
-            <div class="certificate__content">
-              <h3 class="certificate__title">Certificate of attandance on computer tecnology</h3>
-              <p class="certificate__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+            <div class="certificados__content">
+              <h3 class="certificados__title">CISCO | Introduction to Cybersecurity</h3>
+              <p class="certificados__description"><a class="experiencia__company" href="public/pdf/certificados/IntroductionCybersecurity_SaulChavez.pdf" target="_blank" rel="noopener noreferrer">Ver certificado</a></p>
+              <!-- <p class="certificados__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
                 eveniet rem eligendi quos vitae accusamus enim ea iste natus, dignissimos quasi accusantium dolore?
-                Libero quis quos amet, a minus obcaecati.</p>
+                Libero quis quos amet, a minus obcaecati.</p> -->
             </div>
 
-            <div class="certificate__content">
-              <h3 class="certificate__title">Archivement medal for productivity in the work area</h3>
-              <p class="certificate__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+            <div class="certificados__content">
+              <h3 class="certificados__title">CISCO | Get Connected</h3>
+              <p class="certificados__description"><a class="experiencia__company" href="public/pdf/certificados/GetConnected_SaulChavez.pdf" target="_blank" rel="noopener noreferrer">Ver certificado</a></p>
+              <!-- <p class="certificados__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
                 eveniet rem eligendi quos vitae accusamus enim ea iste natus, dignissimos quasi accusantium dolore?
-                Libero quis quos amet, a minus obcaecati.</p>
+                Libero quis quos amet, a minus obcaecati.</p> -->
+            </div>
+
+            <div class="certificados__content">
+              <h3 class="certificados__title">CISCO | Introduction to IoT</h3>
+              <p class="certificados__description"><a class="experiencia__company" href="public/pdf/certificados/IntroductionIOT_SaulChavez.pdf" target="_blank" rel="noopener noreferrer">Ver certificado</a></p>
+              <!-- <p class="certificados__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+                eveniet rem eligendi quos vitae accusamus enim ea iste natus, dignissimos quasi accusantium dolore?
+                Libero quis quos amet, a minus obcaecati.</p> -->
+            </div>
+
+            <div class="certificados__content">
+              <h3 class="certificados__title">CISCO | Programming Essentials in Python</h3>
+              <p class="certificados__description"><a class="experiencia__company" href="public/pdf/certificados/Python_SaulChavez.pdf" target="_blank" rel="noopener noreferrer">Ver certificado</a></p>
+              <!-- <p class="certificados__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+                eveniet rem eligendi quos vitae accusamus enim ea iste natus, dignissimos quasi accusantium dolore?
+                Libero quis quos amet, a minus obcaecati.</p> -->
+            </div>
+
+            <div class="certificados__content">
+              <h3 class="certificados__title">CISCO | Programming Essentials in C++</h3>
+              <p class="certificados__description"><a class="experiencia__company" href="public/pdf/certificados/Essentials-C++_SaulChavez.pdf" target="_blank" rel="noopener noreferrer">Ver certificado</a></p>
+              <!-- <p class="certificados__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+                eveniet rem eligendi quos vitae accusamus enim ea iste natus, dignissimos quasi accusantium dolore?
+                Libero quis quos amet, a minus obcaecati.</p> -->
+            </div>
+
+            <div class="certificados__content">
+              <h3 class="certificados__title">CISCO | Programming Essentials in C</h3>
+              <p class="certificados__description"><a class="experiencia__company" href="public/pdf/certificados/Essentials-C_SaulChavez.pdf" target="_blank" rel="noopener noreferrer">Ver certificado</a></p>
+              <!-- <p class="certificados__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+                eveniet rem eligendi quos vitae accusamus enim ea iste natus, dignissimos quasi accusantium dolore?
+                Libero quis quos amet, a minus obcaecati.</p> -->
+            </div>
+
+            <div class="certificados__content">
+              <h3 class="certificados__title">Microsoft - Klatus | Participacion INMERSION en la NUBE AZ-900</h3>
+              <p class="certificados__description"><a class="experiencia__company" href="public/pdf/certificados/Constancia-InnersionenLaNubeAZ-900.pdf" target="_blank" rel="noopener noreferrer">Ver constancia</a></p>
+              <!-- <p class="certificados__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+                eveniet rem eligendi quos vitae accusamus enim ea iste natus, dignissimos quasi accusantium dolore?
+                Libero quis quos amet, a minus obcaecati.</p> -->
             </div>
 
           </div>
         </section>
 
         <!-- Referencias -->
-        <section class="references section" id="referencias">
-          <h2 class="section-title">References</h2>
+        <section class="referencia section" id="referencias">
+          <h2 class="section-title">referencia</h2>
 
-          <div class="references__container bd-grid">
+          <div class="referencia__container bd-grid">
 
-            <div class="references__content bd-grid">
-              <span class="references__subtitle">Sr. Director</span>
-              <h3 class="references__title">Mr. Clay Doe"</h3>
-              <ul class="references__contact">
+            <div class="referencia__content bd-grid">
+              <span class="referencia__subtitle">Sr. Director</span>
+              <h3 class="referencia__title">Mr. Clay Doe"</h3>
+              <ul class="referencia__contact">
                 <li>Phone: 999-777-666</li>
                 <li>Email: 9p8O1@example.com</li>
               </ul>
             </div>
 
-            <div class="references__content bd-grid">
-              <span class="references__subtitle">Mag. Developer</span>
-              <h3 class="references__title">Mr. Robinson Blass"</h3>
-              <ul class="references__contact">
+            <div class="referencia__content bd-grid">
+              <span class="referencia__subtitle">Mag. Developer</span>
+              <h3 class="referencia__title">Mr. Robinson Blass"</h3>
+              <ul class="referencia__contact">
                 <li>Phone: 999-777-666</li>
                 <li>Email: 9p8O1@example.com</li>
               </ul>
@@ -308,7 +391,7 @@
         </section>
 
         <!-- Lenguajes -->
-        <section class="languages section">
+        <!-- <section class="languages section">
           <h2 class="section-title">Languajes</h2>
 
           <div class="languages__container">
@@ -324,31 +407,31 @@
               </li>
             </ul>
           </div>
-        </section>
+        </section> -->
 
         <!-- intereses -->
-        <section class="interests section">
+        <section class="intereses section">
           <h2 class="section-title">Intereses</h2>
-          <div class="interests__container bd-grid">
+          <div class="intereses__container bd-grid">
 
-            <div class="interests__content">
-              <i class='bx bx-headphone interests__icon'></i>
-              <span class="interests__name">Music</span>
+            <div class="intereses__content">
+              <i class='bx bx-headphone intereses__icon'></i>
+              <span class="intereses__name">Musica</span>
             </div>
 
-            <div class="interests__content">
-              <i class='bx bxs-plane-alt interests__icon'></i>
-              <span class="interests__name">Travel</span>
+            <div class="intereses__content">
+              <i class='bx bxs-plane-alt intereses__icon'></i>
+              <span class="intereses__name">Viajes</span>
             </div>
 
-            <div class="interests__content">
-              <i class='bx bx-book interests__icon'></i>
-              <span class="interests__name">Book</span>
+            <div class="intereses__content">
+              <i class='bx bx-book intereses__icon'></i>
+              <span class="intereses__name">Leer</span>
             </div>
 
-            <div class="interests__content">
-              <i class='bx bx-dumbbell interests__icon'></i>
-              <span class="interests__name">Fitness</span>
+            <div class="intereses__content">
+              <i class='bx bx-laptop intereses__icon'></i>
+              <span class="intereses__name">Tecnolog&iacute;a</span>
             </div>
 
           </div>
@@ -358,7 +441,7 @@
   </main>
 
   <a href="#" class="scrolltop" id="scroll-top">
-    <i class='bx bx-up-arrow-alt scrolltop__icon' ></i>
+    <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
   </a>
 
   <script src='assets/js/main.js'></script>
